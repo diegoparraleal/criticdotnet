@@ -1,0 +1,627 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-03T01:44:48.680Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_c78354813997426a9481a8ac02dbc0fc",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315158218,
+      "created": 1612313940163,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2/reviews",
+      "name": "Add Review",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"comment\": \"my new worst comment\",\n\t\"user\": 1,\n  \"rating\": 0\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313940163,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "parentId": "fld_344f9826b54748dc8287b0fc42e087ed",
+      "modified": 1612313930097,
+      "created": 1612313930097,
+      "name": "Reviews",
+      "description": "",
+      "environment": {
+      },
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1612313930098,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_344f9826b54748dc8287b0fc42e087ed",
+      "parentId": "wrk_533f3d526f9545248c2f2e4f12beb166",
+      "modified": 1612223010174,
+      "created": 1612223010174,
+      "name": "Critic",
+      "description": "",
+      "environment": {
+      },
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1612223010174,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_533f3d526f9545248c2f2e4f12beb166",
+      "parentId": null,
+      "modified": 1612201487556,
+      "created": 1612201487556,
+      "name": "Insomnia",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_10a88ed8ba334edba23940bd1263477d",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315225132,
+      "created": 1612315183861,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2/reviews/1",
+      "name": "Edit Review",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"comment\": \"my first comment - modified\",\n\t\"rating\": 4.9\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313561319,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d68a426978d14005bd70568e24aa7924",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315276069,
+      "created": 1612315272320,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2/reviews/1",
+      "name": "Get Review",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313466608,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a35dac23c64b4235adf092c1bc4a49b8",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315250277,
+      "created": 1612315243222,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2/reviews/5",
+      "name": "Delete Review",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313371897,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a25798f7ff544ded985fafb9eae7603d",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315327974,
+      "created": 1612315302058,
+      "url": "http://localhost/critic/api/1.0.0/reviews/pending",
+      "name": "Get Pending Reviews",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313371847,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bd8ec85835a749129d36604a21c17f72",
+      "parentId": "fld_3827c3a9d6e0473a8611b41649f410ec",
+      "modified": 1612315753357,
+      "created": 1612315335409,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2/reviews/2/reply",
+      "name": "Reply Review",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"comment\": \"Thanks!\"\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_161264e648884e8ebb49e911baeab5c1"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313371797,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3490174f11c648eb96b15bc04da16472",
+      "parentId": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "modified": 1612313190589,
+      "created": 1612313182475,
+      "url": "http://localhost/critic/api/1.0.0/restaurants",
+      "name": "GetRestaurants",
+      "description": "",
+      "method": "GET",
+      "body": {
+      },
+      "parameters": [
+      ],
+      "headers": [
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612313182475,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "parentId": "fld_344f9826b54748dc8287b0fc42e087ed",
+      "modified": 1612313169373,
+      "created": 1612313169373,
+      "name": "Restaurants",
+      "description": "",
+      "environment": {
+      },
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1612313169373,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_68c438a3f9b14c8baaa0a75d09927fc8",
+      "parentId": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "modified": 1612313865907,
+      "created": 1612313204772,
+      "url": "http://localhost/critic/api/1.0.0/restaurants",
+      "name": "AddRestaurant",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Criterion\",\n  \"city\": \"Bogota\",\n  \"price\": 30\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e93ac67a1e814f4dbab653d1d38b9f81"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612268722268.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b9e8e0a227174e6f84e44597049f6719",
+      "parentId": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "modified": 1612314968153,
+      "created": 1612313841193,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/2",
+      "name": "GetRestaurant",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e93ac67a1e814f4dbab653d1d38b9f81"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612246492165.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cd96bfe7975247cea5dc27365fa00d33",
+      "parentId": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "modified": 1612313878094,
+      "created": 1612313859957,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/1",
+      "name": "EditRestaurant",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Criterion- modified\",\n  \"city\": \"Chia\",\n  \"price\": 40\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e93ac67a1e814f4dbab653d1d38b9f81"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612235377113.625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d84d4711b5d14ee98ebeea7a25ad42e2",
+      "parentId": "fld_eca9b08f065b4c198f336907aa3362c2",
+      "modified": 1612313901459,
+      "created": 1612313896329,
+      "url": "http://localhost/critic/api/1.0.0/restaurants/1",
+      "name": "DeleteRestaurant",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e93ac67a1e814f4dbab653d1d38b9f81"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612229819587.8125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_772a6d183c894c1ab9f47ef4aa4789f2",
+      "parentId": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "modified": 1612224263476,
+      "created": 1612224262062,
+      "url": "http://localhost/critic/api/1.0.0/users",
+      "name": "GetUsers",
+      "description": "",
+      "method": "GET",
+      "body": {
+      },
+      "parameters": [
+      ],
+      "headers": [
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612224262062,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "parentId": "fld_344f9826b54748dc8287b0fc42e087ed",
+      "modified": 1612224203059,
+      "created": 1612224203059,
+      "name": "Users",
+      "description": "",
+      "environment": {
+      },
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1612224203059,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_ff709b4621294737ab467f6fe8bf09ab",
+      "parentId": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "modified": 1612224225298,
+      "created": 1612223093877,
+      "url": "http://localhost/critic/api/1.0.0/users",
+      "name": "CreateUser",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"user@example.com\",\n  \"role\": \"user\"\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_623d14482b164d0c8484587b12bf6bc9"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612201496902,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3c09eb7002ac4ed7ab0978c330b1607e",
+      "parentId": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "modified": 1612313137580,
+      "created": 1612223003730,
+      "url": "http://localhost/critic/api/1.0.0/users/2",
+      "name": "GetUser",
+      "description": "",
+      "method": "GET",
+      "body": {
+      },
+      "parameters": [
+      ],
+      "headers": [
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612201496852,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b57fc3a64e3d4614a2d77d7dfc0f5e21",
+      "parentId": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "modified": 1612313142538,
+      "created": 1612223836619,
+      "url": "http://localhost/critic/api/1.0.0/users/2",
+      "name": "EditUser",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"user@modified.com\",\n  \"role\": \"user\"\n}"
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4af554430f8640339f139af7aba22071"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612201496802,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_53e68b5ea8304db381478e8acbae8fef",
+      "parentId": "fld_163cf06e091a4d9d8f4478d4b4aed259",
+      "modified": 1612313146773,
+      "created": 1612223859412,
+      "url": "http://localhost/critic/api/1.0.0/users/2",
+      "name": "DeleteUser",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4af554430f8640339f139af7aba22071"
+        }
+      ],
+      "authentication": {
+      },
+      "metaSortKey": -1612201496752,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_6d64e85c61cb235f59a83ef5d90df648c6773653",
+      "parentId": "wrk_533f3d526f9545248c2f2e4f12beb166",
+      "modified": 1612201487716,
+      "created": 1612201487716,
+      "name": "Base Environment",
+      "data": {
+      },
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1612201487716,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_6d64e85c61cb235f59a83ef5d90df648c6773653",
+      "parentId": "wrk_533f3d526f9545248c2f2e4f12beb166",
+      "modified": 1612201487724,
+      "created": 1612201487724,
+      "name": "Default Jar",
+      "cookies": [
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_8f5411bf49034eadb0bfdd3c9b26c3e3",
+      "parentId": "wrk_533f3d526f9545248c2f2e4f12beb166",
+      "modified": 1612201487559,
+      "created": 1612201487559,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
