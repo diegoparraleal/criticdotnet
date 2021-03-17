@@ -92,7 +92,7 @@ namespace Critic.Controllers
         /// <param name="body"></param>
         /// <response code="200">Successful operation</response>
         /// <response code="404">Not found</response>
-        [HttpPost]
+        [HttpPut]
         [Route("restaurants/{restaurantId}/reviews/{reviewId}")]
         [GoogleAuthorize(AppUser.Roles.Admin)]
         public async Task<IActionResult> EditReview([FromRoute][Required] int? restaurantId, [FromRoute][Required] int? reviewId, [FromBody] Review newReview)
@@ -101,10 +101,14 @@ namespace Critic.Controllers
             if (review == null) return NotFound();
 
             review.Comment = newReview.Comment;
-            review.Date = DateTime.Now;
             review.Rating = newReview.Rating;
 
             _context.Reviews.Update(review);
+
+            if (newReview.Reply != null) {
+                await ReplyReview(restaurantId, reviewId, newReview.Reply);
+            }
+
             await _context.SaveChangesAsync();
             await _businessService.ReCalculateRestaurantRating(restaurantId);
 

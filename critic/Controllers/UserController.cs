@@ -94,7 +94,7 @@ namespace Critic.Controllers
         /// <param name="body"></param>
         /// <response code="200">Successful operation</response>
         /// <response code="404">Not found</response>
-        [HttpPost]
+        [HttpPut]
         [Route("{userId}")]
         [GoogleAuthorize(AppUser.Roles.Admin)]
         public async Task<IActionResult> EditUser([FromRoute][Required] int? userId, [FromBody] AppUser newUser)
